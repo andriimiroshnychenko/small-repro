@@ -13,7 +13,7 @@ To reproduce:
  Notice that no error are shown, and two `console.log`s printed, as intended.
 
  - uncomment `@computed` decorator;
- - change `defaultSorting: TestClass.defaultSorting,` to smth like `defaultSorting: 'foo',` to eliminate call of class static property;
+ - change `name: TestClass.person.name,` to smth like `name: 'foo',` to eliminate call of class static property;
  - execute `rm -rf dist/ && ./node_modules/webpack/bin/webpack.js && node dist/index.js`.
 
  No error appeared.
