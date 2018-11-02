@@ -2,14 +2,14 @@ import { computed } from 'mobx';
 
 export class TestClass {
 
-  static defaultSorting = {
-    sortOrder: 'asc',
-    sortField: 'lastTestRun.createdAt'
+  static person = {
+    name: 'Bazz',
+    familyName: 'Lighter'
   };
 
-  static defaultFilters = {
-    defaultSorting: TestClass.defaultSorting,
-    'author.id': []
+  static secondPerson = {
+    name: TestClass.person.name,
+    familyName: 'Fuzz'
   };
 
   @computed
